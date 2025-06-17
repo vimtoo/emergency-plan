@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="af" dir="ltr">
+<html lang="tr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noodplan vir die Diplomatieke Sending in Koeweit</title>
+    <title>Kuveyt'teki Diplomatik Misyon için Acil Durum Planı</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,22 +25,22 @@
 
     <div class="flex h-screen bg-white">
         
-        <aside id="sidebar" class="w-64 bg-gray-50 p-4 flex-shrink-0 transition-transform -translate-x-full sm:translate-x-0 border-r">
+        <aside id="sidebar" class="w-64 bg-gray-50 p-4 flex-shrink-0 transition-transform -translate-x-full sm:translate-x-0 border-e">
             <div class="flex items-center mb-6">
                 <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shrink-0">
                     <span class="text-white text-2xl font-bold">!</span>
                 </div>
-                <h1 class="text-lg font-bold text-gray-700 mx-3">Noodplan</h1>
+                <h1 class="text-lg font-bold text-gray-700 mx-3">Acil Durum Planı</h1>
             </div>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="#dashboard" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Kontrolepaneel</a></li>
-                    <li><a href="#threats" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Radiologiese Bedreigings</a></li>
-                    <li><a href="#chemical" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Chemiese Bedreigings</a></li>
-                    <li><a href="#preparedness" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Persoonlike Voorbereiding</a></li>
-                    <li><a href="#shelter" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Skuiling & Beskerming</a></li>
-                    <li><a href="#procedures" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Noodprosedures</a></li>
-                    <li><a href="#medical" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Mediese Reaksie</a></li>
+                    <li><a href="#dashboard" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Kontrol Paneli</a></li>
+                    <li><a href="#threats" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Radyolojik Tehditler</a></li>
+                    <li><a href="#chemical" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Kimyasal Tehditler</a></li>
+                    <li><a href="#preparedness" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Kişisel Hazırlık</a></li>
+                    <li><a href="#shelter" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Sığınak ve Korunma</a></li>
+                    <li><a href="#procedures" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Acil Durum Prosedürleri</a></li>
+                    <li><a href="#medical" class="nav-link flex items-center p-3 my-1 rounded-lg font-semibold text-gray-600">Tıbbi Müdahale</a></li>
                 </ul>
             </nav>
         </aside>
@@ -52,14 +52,14 @@
             </button>
             
             <section id="dashboard" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">Hoofkontrolepaneel</h2>
-                <p class="mb-6 text-gray-500">'n Vinnige oorsig van die huidige situasie en vereiste onmiddellike aksies.</p>
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">Ana Kontrol Paneli</h2>
+                <p class="mb-6 text-gray-500">Mevcut duruma ve gereken acil eylemlere hızlı bir genel bakış.</p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
                         <div>
-                           <h3 class="font-bold text-lg mb-2">Huidige Bedreigingsvlak (THREATCON)</h3>
-                           <p class="text-sm text-gray-500 mb-4">Hierdie vlak bepaal die gereedheidspostuur wat van alle personeel vereis word.</p>
+                           <h3 class="font-bold text-lg mb-2">Mevcut Tehdit Durumu (THREATCON)</h3>
+                           <p class="text-sm text-gray-500 mb-4">Bu seviye, tüm personelden beklenen hazırlık durumunu belirler.</p>
                         </div>
                         <div id="threat-level-card" class="text-center p-4 rounded-lg">
                             <div id="threat-level-text" class="text-4xl font-bold"></div>
@@ -70,74 +70,74 @@
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 lg:col-span-2">
-                        <h3 class="font-bold text-lg mb-4">Onmiddellike Noodaksies</h3>
-                        <p class="text-sm text-gray-500 mb-6">Volg amptelike instruksies in 'n noodgeval. Hierdie is vinnige skakels na sleutelprosedures.</p>
+                        <h3 class="font-bold text-lg mb-4">Anında Acil Durum Eylemleri</h3>
+                        <p class="text-sm text-gray-500 mb-6">Acil bir durumda resmi talimatları izleyin. Bunlar temel prosedürlere hızlı bağlantılardır.</p>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <button onclick="navigateTo('procedures', 'alpha')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold p-4 rounded-lg text-center transition">
                                 <span class="text-3xl">☢️</span>
-                                <span class="block mt-2">Prosedure Alpha: Skuil-ter-plaatse</span>
+                                <span class="block mt-2">Prosedür Alfa: Yerinde Sığınak</span>
                             </button>
                             <button onclick="navigateTo('procedures', 'bravo')" class="bg-blue-500 hover:bg-blue-600 text-white font-bold p-4 rounded-lg text-center transition">
                                 <span class="text-3xl">🚗</span>
-                                <span class="block mt-2">Prosedure Bravo: Evakuasie</span>
+                                <span class="block mt-2">Prosedür Bravo: Tahliye</span>
                             </button>
                             <button onclick="navigateTo('procedures', 'charlie')" class="bg-red-500 hover:bg-red-600 text-white font-bold p-4 rounded-lg text-center transition">
                                 <span class="text-3xl">🚨</span>
-                                <span class="block mt-2">Prosedure Charlie: Terroriste-insident</span>
+                                <span class="block mt-2">Prosedür Charlie: Terör Olayı</span>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="mt-8 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                    <h3 class="font-bold text-lg mb-2">Oorsig van die Veiligheidsituasie</h3>
-                    <p class="text-gray-600">Die huidige veiligheidsituasie in die streek is wisselvallig met die potensiaal vir vinnige eskalasie. Enige voorval, soos 'n militêre aanval op 'n kernfasiliteit, sal deel wees van 'n breër, meer dinamiese konflik. Die noodplan moet in staat wees om verskeie krisisse gelyktydig te hanteer, insluitend militêre optrede, radiologiese besoedeling, terrorisme en burgerlike onrus.</p>
+                    <h3 class="font-bold text-lg mb-2">Güvenlik Durumuna Genel Bakış</h3>
+                    <p class="text-gray-600">Bölgedeki mevcut güvenlik durumu değişkendir ve hızla tırmanma potansiyeline sahiptir. Bir nükleer tesise askeri saldırı gibi herhangi bir olay, daha geniş ve daha dinamik bir çatışmanın parçası olacaktır. Acil durum planı, askeri harekat, radyolojik kirlenme, terörizm ve sivil huzursuzluk dahil olmak üzere birden fazla krizi aynı anda yönetebilmelidir.</p>
                 </div>
             </section>
 
             
             <section id="threats" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">Radiologiese Bedreigings & Waarskuwingstelsels</h2>
-                <p class="mb-6 text-gray-500">Verstaan die potensiële radiologiese risiko's en hoe om amptelike waarskuwings te ontvang.</p>
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">Radyolojik Tehditler ve Uyarı Sistemleri</h2>
+                <p class="mb-6 text-gray-500">Potansiyel radyolojik riskleri ve resmi uyarıları nasıl alacağınızı anlayın.</p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Radiologiese Bedreiging: Bushehr-fasiliteit</h3>
-                        <p class="text-sm text-gray-600 mb-4">Die hoof radiologiese bedreiging vir Koeweit is Iran se Bushehr-kernkragsentrale, wat ongeveer 290 km oorkant die Golf geleë is. Die aankoms van enige radioaktiewe vrystelling hang af van die windrigting.</p>
+                        <h3 class="font-bold text-lg mb-4">Radyolojik Tehdit: Buşehr Tesisi</h3>
+                        <p class="text-sm text-gray-600 mb-4">Kuveyt için ana radyolojik tehdit, Körfez'in yaklaşık 290 km karşısında bulunan İran'ın Buşehr Nükleer Santrali'dir. Herhangi bir radyoaktif salınımın ulaşması rüzgar yönüne bağlıdır.</p>
                         <div class="relative w-full h-64 bg-blue-100 rounded-lg overflow-hidden border-2 border-blue-200">
                             <div class="absolute top-1/2 right-1/4 transform -translate-y-1/2 text-center">
                                 <div class="w-4 h-4 bg-yellow-400 rounded-full animate-ping"></div>
-                                <span class="font-bold text-blue-800">Koeweit</span>
+                                <span class="font-bold text-blue-800">Kuveyt</span>
                             </div>
                             <div class="absolute top-1/2 left-1/4 transform -translate-y-1/2 text-center">
                                 <div class="w-4 h-4 bg-red-600 rounded-full"></div>
-                                <span class="font-bold text-red-800">Bushehr</span>
+                                <span class="font-bold text-red-800">Buşehr</span>
                             </div>
                             <div id="wind-plume" class="absolute top-1/2 left-1/4 h-1 bg-red-400/50 origin-left transition-all duration-1000" style="width: 150px;"></div>
                         </div>
                          <div class="mt-4 text-center">
-                            <p class="text-sm mb-2">Simuleer Windrigting:</p>
-                            <button id="shamal-wind-btn" class="px-4 py-2 bg-gray-200 rounded-md">Shamal-wind (Oorheersend)</button>
-                            <button id="kaus-wind-btn" class="px-4 py-2 bg-red-200 rounded-md">Kaus-wind (Bedreiging)</button>
+                            <p class="text-sm mb-2">Rüzgar Yönünü Simüle Edin:</p>
+                            <button id="shamal-wind-btn" class="px-4 py-2 bg-gray-200 rounded-md">Şimal Rüzgarı (Hakim)</button>
+                            <button id="kaus-wind-btn" class="px-4 py-2 bg-red-200 rounded-md">Kaus Rüzgarı (Tehdit)</button>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Koeweit se Openbare Waarskuwingstelsels</h3>
-                        <p class="text-sm text-gray-600 mb-4">Die eerste waarskuwing vir enige groot voorval kan van die Koeweitse owerhede kom. Weet wat die sirenes beteken.</p>
+                        <h3 class="font-bold text-lg mb-4">Kuveyt Kamu Uyarı Sistemleri</h3>
+                        <p class="text-sm text-gray-600 mb-4">Herhangi büyük bir olay için ilk uyarı Kuveyt makamlarından gelebilir. Sirenlerin ne anlama geldiğini bilin.</p>
                         <div id="siren-guide" class="space-y-3"></div>
-                        <div class="source-citation">Bron: Koeweit se Ministerie van Binnelandse Sake, Algemene Direktoraat van Burgerlike Beskerming.</div>
+                        <div class="source-citation">Kaynak: Kuveyt İçişleri Bakanlığı, Sivil Savunma Genel Müdürlüğü.</div>
                     </div>
                 </div>
             </section>
             
             <section id="chemical" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">Chemiese Wapenbedreigings</h2>
-                <p class="mb-6 text-gray-500">Prosedures en noodhulp vir blootstelling aan chemiese middels, gebaseer op Burgerlike Beskermingsriglyne.</p>
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">Kimyasal Silah Tehditleri</h2>
+                <p class="mb-6 text-gray-500">Sivil Savunma talimatlarına dayalı olarak kimyasal maddelere maruz kalma durumunda prosedürler ve ilk yardım.</p>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
-                    <h3 class="font-bold text-lg mb-4">Beskermende Maatreëls vir Chemiese Aanvalle</h3>
+                    <h3 class="font-bold text-lg mb-4">Kimyasal Saldırılara Karşı Koruyucu Önlemler</h3>
                     <div id="chem-measures-accordion" class="space-y-4"></div>
-                    <div class="source-citation">Bron: Koeweit se Ministerie van Binnelandse Sake, "Voorsorgmaatreëls in Geval van Aanvalle met Chemiese Wapens".</div>
+                    <div class="source-citation">Kaynak: Kuveyt İçişleri Bakanlığı, "Kimyasal Silahlarla Saldırı Durumunda Önleyici Tedbirler".</div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                    <h3 class="font-bold text-lg mb-4">Simptome & Noodhulp vir Chemiese Middels</h3>
+                    <h3 class="font-bold text-lg mb-4">Kimyasal Maddeler için Belirtiler ve İlk Yardım</h3>
                      <div class="overflow-x-auto">
                         <table class="w-full text-sm text-left text-gray-500">
                             <thead class="text-xs text-gray-700 uppercase bg-gray-50">
@@ -146,109 +146,109 @@
                             <tbody id="chem-table-body"></tbody>
                         </table>
                     </div>
-                     <div class="source-citation">Bron: Koeweit se Ministerie van Binnelandse Sake, "Voorsorgmaatreëls in Geval van Aanvalle met Chemiese Wapens".</div>
+                     <div class="source-citation">Kaynak: Kuveyt İçişleri Bakanlığı, "Kimyasal Silahlarla Saldırı Durumunda Önleyici Tedbirler".</div>
                 </div>
             </section>
 
             <section id="preparedness" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">Persoonlike en Gesinsvoorbereiding</h2>
-                <p class="mb-6 text-gray-500">Vooraf voorbereiding is die sleutel tot veiligheid. Gebruik hierdie hulpmiddels om jou gesin voor te berei.</p>
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">Kişisel ve Ailevi Hazırlık</h2>
+                <p class="mb-6 text-gray-500">Önceden hazırlık, güvenliğin anahtarıdır. Ailenizi hazırlamak için bu araçları kullanın.</p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Tuisbly-pakket (2-week voorraad)</h3>
+                        <h3 class="font-bold text-lg mb-4">Evde Kalma Kiti (2 Haftalık Tedarik)</h3>
                         <div id="stay-kit-checklist" class="space-y-3 max-h-96 overflow-y-auto ps-2"></div>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Noodtas (Per persoon - 72 uur)</h3>
+                        <h3 class="font-bold text-lg mb-4">Acil Durum Çantası (Kişi Başı - 72 Saat)</h3>
                         <div id="go-bag-checklist" class="space-y-3 max-h-96 overflow-y-auto ps-2"></div>
                     </div>
                 </div>
                 <div class="mt-8 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                    <h3 class="font-bold text-lg mb-4">Gesinsnoodplan</h3>
+                    <h3 class="font-bold text-lg mb-4">Aile Acil Durum Planı</h3>
                      <div class="space-y-4">
                         <div>
-                            <label class="font-semibold">Kontakpersoon buite die land:</label>
-                            <input type="text" placeholder="Naam, verhouding en telefoonnommer" class="mt-1 w-full p-2 border rounded-md">
+                            <label class="font-semibold">Ülke Dışı İrtibat Kişisi:</label>
+                            <input type="text" placeholder="İsim, yakınlık ve telefon numarası" class="mt-1 w-full p-2 border rounded-md">
                         </div>
                         <div>
-                            <label class="font-semibold">Ontmoetingspunte:</label>
-                            <input type="text" placeholder="1. Naby die huis (bv. straathoek)" class="mt-1 w-full p-2 border rounded-md">
-                            <input type="text" placeholder="2. In die woonbuurt (bv. park)" class="mt-2 w-full p-2 border rounded-md">
-                            <input type="text" placeholder="3. Ambassade se bymekaarkomplek (soos aangedui)" class="mt-2 w-full p-2 border rounded-md">
+                            <label class="font-semibold">Buluşma Noktaları:</label>
+                            <input type="text" placeholder="1. Evin yakını (ör. sokak köşesi)" class="mt-1 w-full p-2 border rounded-md">
+                            <input type="text" placeholder="2. Mahallede (ör. park)" class="mt-2 w-full p-2 border rounded-md">
+                            <input type="text" placeholder="3. Büyükelçilik toplanma alanı (talimata göre)" class="mt-2 w-full p-2 border rounded-md">
                         </div>
                         <div>
-                            <label class="font-semibold">Bêre Belangrike Dokumente:</label>
-                            <p class="text-sm text-gray-600">Versamel paspoorte, geboortesertifikate, versekeringsdokumente. Hou papierkopieë in jou Noodtas en geënkripteerde digitale kopieë op 'n USB-skyf of veilige wolkberging.</p>
+                            <label class="font-semibold">Önemli Belgeleri Saklayın:</label>
+                            <p class="text-sm text-gray-600">Pasaportları, doğum belgelerini, sigorta poliçelerini toplayın. Acil durum çantanızda kağıt kopyalarını ve şifreli dijital kopyaları bir USB sürücüde veya güvenli bulut depolamada saklayın.</p>
                         </div>
                     </div>
                 </div>
             </section>
             
             <section id="shelter" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">Skuiling & Beskerming</h2>
-                <p class="mb-6 text-gray-500">Gedetailleerde leiding oor die skep van 'n veilige skuiling en die verstaan van stralingsbeskerming.</p>
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">Sığınak ve Korunma</h2>
+                <p class="mb-6 text-gray-500">Güvenli bir sığınak oluşturma ve radyasyondan korunmayı anlama konusunda ayrıntılı rehberlik.</p>
                 
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
-                    <h3 class="font-bold text-lg mb-4">Berei Jou Huisskuiling Voor</h3>
-                    <p class="text-sm text-gray-600 mb-4">In 'n radiologiese of chemiese noodgeval is die veiligste aksie om binne te gaan en 'n versperring tussen jou en die buitelug te skep. Hier is hoe om jou skuilkamer vooraf voor te berei.</p>
+                    <h3 class="font-bold text-lg mb-4">Ev Sığınağınızı Hazırlama</h3>
+                    <p class="text-sm text-gray-600 mb-4">Radyolojik veya kimyasal bir acil durumda, en güvenli eylem içeri girmek ve dış hava ile aranızda bir bariyer oluşturmaktır. Sığınak odanızı önceden nasıl hazırlayacağınız aşağıda açıklanmıştır.</p>
                     <div id="home-shelter-steps" class="space-y-4"></div>
-                     <div class="source-citation">Bron: Koeweit se Ministerie van Binnelandse Sake, Algemene Direktoraat van Burgerlike Beskerming.</div>
+                     <div class="source-citation">Kaynak: Kuveyt İçişleri Bakanlığı, Sivil Savunma Genel Müdürlüğü.</div>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Sleutelbeginsels van Stralingsbeskerming</h3>
-                        <p class="text-sm text-gray-600 mb-4">Jou veiligheid hang af van drie basiese beginsels: Tyd, Afstand en Afskerming. Die minimalisering van jou blootstelling is die sleutel.</p>
+                        <h3 class="font-bold text-lg mb-4">Radyasyondan Korunmanın Temel İlkeleri</h3>
+                        <p class="text-sm text-gray-600 mb-4">Güvenliğiniz üç temel ilkeye bağlıdır: Zaman, Mesafe ve Zırhlama. Maruziyetinizi en aza indirmek anahtardır.</p>
                         <div id="rad-protection-principles" class="space-y-4"></div>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Openbare Skuilingsopspoorder</h3>
-                        <p class="text-sm text-gray-600">Die Staat Koeweit hou openbare skuilings in stand. In 'n noodgeval sal owerhede skuilingplekke aankondig. Gebruik hierdie hulpmiddel om jou naaste aangewese skuiling te vind met behulp van die amptelike Burgerlike Beskermingsdiens.</p>
+                        <h3 class="font-bold text-lg mb-4">Genel Sığınak Bulucu</h3>
+                        <p class="text-sm text-gray-600">Kuveyt Devleti genel sığınaklar bulundurmaktadır. Acil bir durumda, yetkililer sığınak yerlerini duyuracaktır. Resmi Sivil Savunma hizmetini kullanarak en yakın belirlenmiş sığınağı bulmak için bu aracı kullanın.</p>
                         
                         <div class="mt-4 space-y-4 p-4 border rounded-lg bg-gray-50">
                             <div>
-                                <label for="gov-select" class="block text-sm font-medium text-gray-700">Goewerneur</label>
+                                <label for="gov-select" class="block text-sm font-medium text-gray-700">Valilik</label>
                                 <select id="gov-select" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></select>
                             </div>
                              <div>
-                                <label for="area-select" class="block text-sm font-medium text-gray-700">Gebied</label>
+                                <label for="area-select" class="block text-sm font-medium text-gray-700">Bölge</label>
                                 <select id="area-select" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></select>
                             </div>
-                            <button id="search-shelter-btn" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition">Soek op Amptelike Webwerf</button>
-                            <p class="text-xs text-center text-gray-500">Dit sal die amptelike Koeweitse Burgerlike Beskerming-skuilingsopspoorder in 'n nuwe venster oopmaak.</p>
+                            <button id="search-shelter-btn" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition">Resmi Web Sitesinde Ara</button>
+                            <p class="text-xs text-center text-gray-500">Bu, yeni bir pencerede resmi Kuveyt Sivil Savunma sığınak arama aracını açacaktır.</p>
                         </div>
                     </div>
                 </div>
             </section>
             
             <section id="procedures" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">Standaard Bedryfsprosedures (SOP)</h2>
-                <p class="mb-6 text-gray-500">Duidelike, stap-vir-stap instruksies vir spesifieke noodscenario's.</p>
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">Standart Operasyon Prosedürleri (SOP)</h2>
+                <p class="mb-6 text-gray-500">Belirli acil durum senaryoları için net, adım adım talimatlar.</p>
                 <div id="procedures-accordion" class="space-y-4"></div>
             </section>
 
             
             <section id="medical" class="content-section">
-                <h2 class="text-3xl font-bold mb-2 text-gray-800">Mediese Reaksie en Dekontaminasie</h2>
-                <p class="mb-6 text-gray-500">Noodsaaklike aksies na 'n voorval om gesondheidsrisiko's en blootstelling te verminder.</p>
+                <h2 class="text-3xl font-bold mb-2 text-gray-800">Tıbbi Müdahale ve Dekontaminasyon</h2>
+                <p class="mb-6 text-gray-500">Sağlık risklerini ve maruziyeti azaltmak için olay sonrası hayati eylemler.</p>
                 <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
                     <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Radiologiese Dekontaminasie</h3>
-                        <p class="text-sm text-gray-600 mb-4">As jy buite was tydens 'n radioaktiewe vrystelling, voer hierdie stappe onmiddellik uit om radioaktiewe materiaal te verwyder.</p>
+                        <h3 class="font-bold text-lg mb-4">Radyolojik Dekontaminasyon</h3>
+                        <p class="text-sm text-gray-600 mb-4">Radyoaktif bir salınım sırasında dışarıdaysanız, radyoaktif malzemeyi temizlemek için bu adımları derhal uygulayın.</p>
                         <ol id="decon-steps" class="list-decimal list-inside space-y-3">
                         </ol>
-                         <div class="source-citation">Bron: Koeweit se Ministerie van Binnelandse Sake, "Straling en die Gevolge daarvan en Metodes van Voorkoming".</div>
+                         <div class="source-citation">Kaynak: Kuveyt İçişleri Bakanlığı, "Radyasyon ve Etkileri ve Önleme Yöntemleri".</div>
                     </div>
                     <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                        <h3 class="font-bold text-lg mb-4">Kaliumjodied (KI) Dosisse</h3>
-                        <p class="text-sm text-gray-600 mb-4"><strong>MOENIE neem nie, tensy uitdruklik deur die Ambassade beveel.</strong> Dit beskerm slegs die skildklier teen radioaktiewe jodium.</p>
+                        <h3 class="font-bold text-lg mb-4">Potasyum İyodür (KI) Dozajları</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Büyükelçilik tarafından açıkça emredilmedikçe ALMAYIN.</strong> Sadece tiroid bezini radyoaktif iyottan korur.</p>
                         <div class="chart-container">
                             <canvas id="ki-chart"></canvas>
                         </div>
                     </div>
                 </div>
                  <div class="mt-8 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                    <h3 class="font-bold text-lg mb-4">Gedetailleerde Kaliumjodied Dosistabel</h3>
+                    <h3 class="font-bold text-lg mb-4">Detaylı Potasyum İyodür Dozaj Tablosu</h3>
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm text-gray-500">
                             <thead class="text-xs text-gray-700 uppercase bg-gray-50">
@@ -268,29 +268,29 @@
             // --- DATA GENERATORS ---
             
             const shelterLocations = {
-                'Kies Goewerneur': [],
-                'Al Asimah (Hoofstad)': ['Abdullah Al-Salem', 'Adailiya', 'Bneid Al-Qar', 'Daiya', 'Dasma', 'Faiha', 'Jibla', 'Kaifan', 'Khaldiya', 'Mansouriya', 'Mirqab', 'Nuzha', 'Qadsiya', 'Qortuba', 'Rawda', 'Salhiya', 'Shamiya', 'Sharq', 'Shuwaikh', 'Sulaibikhat', 'Yarmouk'],
+                'Valilik Seçin': [],
+                'Al Asimah (Başkent)': ['Abdullah Al-Salem', 'Adailiya', 'Bneid Al-Qar', 'Daiya', 'Dasma', 'Faiha', 'Jibla', 'Kaifan', 'Khaldiya', 'Mansouriya', 'Mirqab', 'Nuzha', 'Qadsiya', 'Qortuba', 'Rawda', 'Salhiya', 'Shamiya', 'Sharq', 'Shuwaikh', 'Sulaibikhat', 'Yarmouk'],
                 'Hawalli': ['Bayan', 'Hawalli', 'Jabriya', 'Mishref', 'Mubarak Al-Abdullah', 'Rumaithiya', 'Salmiya', 'Salwa', 'Shaab'],
                 'Mubarak Al-Kabeer': ['Abu Al Hasaniya', 'Abu Ftaira', 'Adan', 'Al-Qurain', 'Al-Qusour', 'Fnaitees', 'Messila', 'Mubarak Al-Kabeer', 'Sabah Al-Salem', 'Wista'],
                 'Al-Ahmadi': ['Abu Halifa', 'Ahmadi', 'Fahaheel', 'Fintas', 'Hadiya', 'Jaber Al-Ali', 'Mahboula', 'Mangaf', 'Reqqa', 'Sabahiya', 'Wafra', 'Zoor'],
-                'Al-Farwaniya': ['Abdullah Al-Mubarak', 'Lughawe', 'Andalous', 'Ardiya', 'Ashbelia', 'Dhajeej', 'Farwaniya', 'Fordous', 'Jleeb Al-Shuyoukh', 'Khaitan', 'Omariya', 'Rabia', 'Reggai', 'Rai'],
+                'Al-Farwaniya': ['Abdullah Al-Mubarak', 'Havaalanı', 'Andalous', 'Ardiya', 'Ashbelia', 'Dhajeej', 'Farwaniya', 'Fordous', 'Jleeb Al-Shuyoukh', 'Khaitan', 'Omariya', 'Rabia', 'Reggai', 'Rai'],
                 'Al-Jahra': ['Amghara', 'Jahra', 'Kabd', 'Naeem', 'Naseem', 'Oyoun', 'Qasr', 'Saad Al Abdullah', 'Sulaibiya', 'Taima', 'Waha']
             };
 
             function getThreatLevels() {
                 return {
-                    '4': { text: 'Vlak 4', desc: 'Normaal', color: 'bg-green-100', textColor: 'text-green-800' },
-                    '3': { text: 'Vlak 3', desc: 'Verhoogde Gereedheid', color: 'bg-blue-100', textColor: 'text-blue-800' },
-                    '2': { text: 'Vlak 2', desc: 'Hoë Waaksaamheid', color: 'bg-yellow-100', textColor: 'text-yellow-800' },
-                    '1': { text: 'Vlak 1', desc: 'Krisisreaksie', color: 'bg-red-100', textColor: 'text-red-800' }
+                    '4': { text: 'Seviye 4', desc: 'Normal', color: 'bg-green-100', textColor: 'text-green-800' },
+                    '3': { text: 'Seviye 3', desc: 'Artan Hazırlık', color: 'bg-blue-100', textColor: 'text-blue-800' },
+                    '2': { text: 'Seviye 2', desc: 'Yüksek Alarm', color: 'bg-yellow-100', textColor: 'text-yellow-800' },
+                    '1': { text: 'Seviye 1', desc: 'Kriz Müdahalesi', color: 'bg-red-100', textColor: 'text-red-800' }
                 };
             }
 
             function getSirenData() {
                 const data = [
-                    { tone: 'Onderbroke Klank', meaning: 'Naderende Gevaar / Waarskuwing', action: "'n Moontlike gevaar nader. Stop normale aktiwiteite. Gaan binnenshuis. Monitor plaaslike media en wag vir 'n amptelike Ambassade-waarskuwing. Berei voor om noodprosedures uit te voer."},
-                    { tone: 'Golwende Klank', meaning: 'Gevaar het Plaasgevind', action: "Die ramp of aanval vind nou plaas. <strong>Voer onmiddellik Skuil-ter-plaatse (Prosedure Alpha) uit.</strong> Beweeg na jou aangewese skuilkamer. Moenie wag vir 'n Ambassade-boodskap nie."},
-                    { tone: 'Deurlopende Klank', meaning: 'Alles Veilig / Einde van Gevaar', action: "Die onmiddellike gevaar is verby. <strong>Bly in die skuiling.</strong> Moenie vertrek voordat jy 'n amptelike 'ALLES VEILIG'-boodskap van die Ambassade ontvang het nie. Wag vir verdere leiding."}
+                    { tone: 'Kesintili Ses', meaning: 'Yakın Tehlike / Uyarı', action: 'Olası bir tehlike yaklaşıyor. Normal aktiviteyi durdurun. İçeri girin. Yerel medyayı izleyin ve resmi bir Büyükelçilik uyarısı bekleyin. Acil durum prosedürlerini uygulamaya hazırlanın.'},
+                    { tone: 'Dalgalı Ses', meaning: 'Tehlike Gerçekleşti', action: 'Felaket veya saldırı şu anda gerçekleşiyor. <strong>Derhal Yerinde Sığınak Prosedürünü (Prosedür Alfa) uygulayın.</strong> Belirlenen sığınak odanıza geçin. Büyükelçilik mesajı beklemeyin.'},
+                    { tone: 'Sürekli Ses', meaning: 'Tehlike Geçti', action: 'Ani tehlike geçti. <strong>Sığınakta kalın.</strong> Büyükelçilikten resmi bir "TEHLİKE GEÇTİ" talimatı alana kadar ayrılmayın. Daha fazla talimat bekleyin.'}
                 ];
                 const colors = ['bg-blue-100', 'bg-yellow-100', 'bg-green-100'];
                 return data.map((item, index) => ({ ...item, color: colors[index] }));
@@ -299,53 +299,53 @@
             function getChemicalData() {
                 return {
                     measures: [
-                        { title: 'Voor \'n Aanval (Voorbereiding)', content: '<ul><li>Berei jou skuilkamer voor (sien Skuiling-afdeling).</li><li>Maak seker jou noodpakket bevat plastiekvelle, kleefband en \'n skêr.</li><li>Leer hoe om ventilasiestelsels vinnig af te skakel.</li><li>As jy \'n gasmasker het, inspekteer dit en maak seker dit pas.</li></ul>' },
-                        { title: 'Tydens \'n Aanval (Indien Buite)', content: '<ul><li>Probeer die rigting van die aanval identifiseer en beweeg vinnig teen die wind in.</li><li>Bedek jou mond en neus met \'n lap (\'n nat lap is beter).</li><li>Soek die naaste stewige, geslote gebou.</li></ul>' },
-                        { title: 'Tydens \'n Aanval (Indien in \'n Voertuig)', content: '<ul><li>Maak alle vensters toe en skakel alle ventilasie- en lugversorgingstelsels af.</li><li>Ry uit die geaffekteerde area indien moontlik.</li><li>As jy nie kan wegry nie, parkeer die motor en skuil in die naaste gebou.</li></ul>' },
-                        { title: 'Na \'n Aanval (Aksies na die Voorval)', content: '<ul><li>Gaan na jou voorafgekose skuilkamer en seël dit.</li><li>Trek jou buitenste laag klere uit, seël dit in \'n plastieksak en was jouself deeglik met seep en water.</li><li>Luister na die radio vir amptelike instruksies van die owerhede.</li><li>Moenie enige kos of water inneem wat jy vermoed besmet kan wees nie.</li></ul>' }
+                        { title: 'Saldırıdan Önce (Hazırlık)', content: '<ul><li>Sığınak odanızı hazırlayın (Sığınak bölümüne bakın).</li><li>Acil durum kitinizin plastik örtü, koli bandı ve makas içerdiğinden emin olun.</li><li>Havalandırma sistemlerini nasıl hızlıca kapatacağınızı öğrenin.</li><li>Gaz maskeniz varsa, kontrol edin ve yüzünüze tam oturduğundan emin olun.</li></ul>' },
+                        { title: 'Saldırı Sırasında (Dışarıdaysanız)', content: '<ul><li>Saldırının yönünü belirlemeye çalışın ve rüzgarın tersi yönde hızla hareket edin.</li><li>Ağzınızı ve burnunuzu bir bezle kapatın (ıslak bez daha iyidir).</li><li>En yakın sağlam, kapalı binaya sığının.</li></ul>' },
+                        { title: 'Saldırı Sırasında (Araçtaysanız)', content: '<ul><li>Tüm pencereleri kapatın ve tüm havalandırma ve klima sistemlerini kapatın.</li><li>Mümkünse etkilenen bölgeden araçla uzaklaşın.</li><li>Uzaklaşamıyorsanız, aracı park edin ve en yakın binaya sığının.</li></ul>' },
+                        { title: 'Saldırıdan Sonra (Olay Sonrası Eylemler)', content: '<ul><li>Önceden seçtiğiniz sığınak odanıza gidin ve mühürleyin.</li><li>Dış katman giysilerinizi çıkarın, plastik bir torbaya koyup kapatın ve kendinizi sabun ve suyla iyice yıkayın.</li><li>Yetkililerden gelen resmi talimatlar için radyoyu dinleyin.</li><li>Kirlenmiş olabileceğinden şüphelendiğiniz yiyecek veya suyu tüketmeyin.</li></ul>' }
                     ],
-                    firstAidHeaders: ['Agent Tipe', 'Simptome', 'Noodhulp'],
+                    firstAidHeaders: ['Ajan Tipi', 'Belirtiler', 'İlk Yardım'],
                     firstAid: [
-                        { type: 'Senuweemiddels (bv. Sarin)', symptoms: 'Moeilik asemhaal, vernoude pupille, kwyl, stuiptrekkings, bewussynsverlies.', aid: 'Beweeg onmiddellik na vars lug. Verwyder besmette klere. Spoel vel en oë met groot hoeveelhede water. Soek dringend mediese hulp.' },
-                        { type: 'Blaarmiddels (bv. Mosterdgas)', symptoms: 'Rooiheid en blase op die vel (soos erge brandwonde), oogirritasie, asemhalingsprobleme.', aid: 'Beweeg na vars lug. Verwyder besmette klere. Spoel vel met water. Moenie blase breek nie. Soek dringend mediese hulp.' }
+                        { type: 'Sinir Gazları (örn. Sarin)', symptoms: 'Nefes almada zorluk, göz bebeklerinde daralma, salya akması, kasılmalar, bilinç kaybı.', aid: 'Derhal temiz havaya çıkın. Kirlenmiş giysileri çıkarın. Cildi ve gözleri bol su ile yıkayın. Acil tıbbi yardım alın.' },
+                        { type: 'Yakıcı Gazlar (örn. Hardal Gazı)', symptoms: 'Ciltte kızarıklık ve kabarcıklar (şiddetli yanıklar gibi), göz tahrişi, solunum sorunları.', aid: 'Temiz havaya çıkın. Kirlenmiş giysileri çıkarın. Cildi su ile yıkayın. Kabarcıkları patlatmayın. Acil tıbbi yardım alın.' }
                     ]
                 };
             }
 
             function getKitData() {
                 return {
-                    stayKit: ['Water (4 liter per persoon per dag)', 'Nie-bederfbare kos (2-week voorraad)', 'Handblikoopmaker', 'Plastiekvelle en kleefband', 'Stofmaskers (N95 of P100)', 'Omvattende noodhulpkissie', 'Persoonlike medikasie (1-maand voorraad)', 'Battery- of handslinger-radio', 'Ekstra batterye', 'Flitsligte', 'Sanitasiemiddele (nat doekies, ens.)'].map(text => ({ text, checked: false })),
-                    goBag: ['Water en kos (3-dae voorraad)', 'Ekstra klere en stewige skoene', 'Kopieë van belangrike dokumente', 'Kontant in klein denominasies', 'Noodsaaklike medikasie (7-dae voorraad)', 'Skoon klere in \'n verseëlde sak', 'Klein noodhulpkissie', 'Draagbare radio en flitslig', 'Ekstra batterye', 'Plaaslike kaart'].map(text => ({ text, checked: false }))
+                    stayKit: ['Su (kişi başı günde 4 litre)', 'Dayanıksız gıda (2 haftalık tedarik)', 'Manuel konserve açacağı', 'Plastik örtü ve koli bandı', 'Toz maskeleri (N95 veya P100)', 'Kapsamlı ilk yardım kiti', 'Kişisel ilaçlar (1 aylık tedarik)', 'Pilli veya elle çalışan radyo', 'Yedek piller', 'El fenerleri', 'Hijyen malzemeleri (ıslak mendil vb.)'].map(text => ({ text, checked: false })),
+                    goBag: ['Su ve yiyecek (3 günlük tedarik)', 'Yedek giysi ve sağlam ayakkabılar', 'Önemli belgelerin kopyaları', 'Küçük banknotlar halinde nakit', 'Gerekli ilaçlar (7 günlük tedarik)', 'Mühürlü bir torbada temiz giysiler', 'Küçük ilk yardım kiti', 'Taşınabilir radyo ve el feneri', 'Yedek piller', 'Yerel harita'].map(text => ({ text, checked: false }))
                 };
             }
             
             function getProceduresData() {
                 return [
-                    { id: 'alpha', title: 'Prosedure Alpha: Skuil-ter-plaatse (Radiologies/Chemies)', icon: '☢️', content: '<p class="mb-4">Die doel is om jou te beskerm teen luggedraagde kontaminante...</p><p class="font-bold text-lg mb-2 text-center">"Gaan Binne, Bly Binne, Luister In"</p><ol class="list-decimal list-inside space-y-2"><li><strong>Gaan Binne:</strong> Gaan onmiddellik in die naaste stewige gebou in.</li><li><strong>Bly Binne:</strong> Beweeg na jou vooraf aangewese skuilkamer.</li><li><strong>Seël:</strong> Maak vensters en deure toe. Skakel alle lugversorging- en ventilasiestelsels af. Volg gedetailleerde seëlstappe in die "Skuiling"-afdeling.</li><li><strong>Luister In:</strong> Gebruik jou radio om vir amptelike instruksies te monitor.</li><li><strong>Moenie Vertrek nie:</strong> Bly in die skuiling totdat jy \'n amptelike "ALLES VEILIG"-boodskap ontvang.</li></ol>' },
-                    { id: 'bravo', title: 'Prosedure Bravo: Evakuasie', icon: '🚗', content: '<p class="mb-4">Evakuasie sal slegs deur die Sendinghoof beveel word...</p><p class="font-bold mb-2">By ontvangs van \'n evakuasiebevel:</p><ol class="list-decimal list-inside space-y-2"><li>Bly kalm en luister.</li><li>Versamel jou gesin en Noodtasse.</li><li>As die tyd dit toelaat, skakel hoofnutdienste af.</li><li>Sluit jou huis.</li><li>Gaan na die aangewese bymekaarkomplek.</li><li>Meld onmiddellik aan.</li></ol>' },
-                    { id: 'charlie', title: 'Prosedure Charlie: Terroriste-insident', icon: '🚨', content: '<p class="mb-4">Volg die instruksies van die Streeksveiligheidsbeampte (RSO)...</p><div class="space-y-4"><h4 class="font-bold">In geval van \'n aktiewe aanvaller:</h4><ul class="list-disc list-inside"><li><strong>Hardloop:</strong> As daar \'n veilige ontsnaproete is, vertrek onmiddellik.</li><li><strong>Kruip weg:</strong> As jy nie kan ontsnap nie, vind \'n veilige plek.</li><li><strong>Veg:</strong> As \'n laaste uitweg, tree op met fisiese aggressie.</li></ul></div>' }
+                    { id: 'alpha', title: 'Prosedür Alfa: Yerinde Sığınak (Radyolojik/Kimyasal)', icon: '☢️', content: '<p class="mb-4">Amaç, sizi havadaki kirleticilerden korumaktır...</p><p class="font-bold text-lg mb-2 text-center">"İçeri Gir, İçeride Kal, Dinle"</p><ol class="list-decimal list-inside space-y-2"><li><strong>İçeri Gir:</strong> Derhal en yakın sağlam binaya girin.</li><li><strong>İçeride Kal:</strong> Önceden belirlenmiş sığınak odanıza geçin.</li><li><strong>Mühürle:</strong> Pencereleri ve kapıları kapatın. Tüm klima ve havalandırma sistemlerini kapatın. "Sığınak" bölümündeki ayrıntılı mühürleme adımlarını izleyin.</li><li><strong>Dinle:</strong> Resmi talimatlar için radyonuzu kullanın.</li><li><strong>Ayrılma:</strong> Resmi bir "TEHLİKE GEÇTİ" talimatı alana kadar sığınakta kalın.</li></ol>' },
+                    { id: 'bravo', title: 'Prosedür Bravo: Tahliye', icon: '🚗', content: '<p class="mb-4">Tahliye yalnızca Misyon Şefi tarafından emredilecektir...</p><p class="font-bold mb-2">Tahliye emri alındığında:</p><ol class="list-decimal list-inside space-y-2"><li>Sakin olun ve dinleyin.</li><li>Ailenizi ve acil durum çantalarınızı toplayın.</li><li>Zaman varsa, ana şebekeleri kapatın.</li><li>Evinizi kilitleyin.</li><li>Belirlenen toplanma noktasına gidin.</li><li>Varışta derhal kayıt yaptırın.</li></ol>' },
+                    { id: 'charlie', title: 'Prosedür Charlie: Terör Olayı', icon: '🚨', content: '<p class="mb-4">Bölge Güvenlik Görevlisinin (RSO) talimatlarını izleyin...</p><div class="space-y-4"><h4 class="font-bold">Aktif bir saldırgan durumunda:</h4><ul class="list-disc list-inside"><li><strong>Kaç:</strong> Güvenli bir kaçış yolu varsa, derhal ayrılın.</li><li><strong>Saklan:</strong> Kaçamazsanız, güvenli bir yer bulun.</li><li><strong>Savaş:</strong> Son çare olarak, fiziksel saldırganlıkla hareket edin.</li></ul></div>' }
                 ];
             }
 
             function getDeconData() {
-                return ['<strong>Verwyder buitenste klere:</strong> Verwyder die buitenste laag klere versigtig en vermy om dit te skud. Plaas dit in \'n plastieksak en seël dit. Hou hierdie sak weg van mense en troeteldiere.', '<strong>Was deeglik:</strong> Neem \'n warm (nie warm nie) stort en was jou hele liggaam en hare met seep en sjampoe. As \'n stort nie beskikbaar is nie, gebruik nat doekies of \'n nat lap om alle blootgestelde vel, veral hande en gesig, skoon te maak.', '<strong>Trek skoon klere aan:</strong> Dra heeltemal skoon klere wat binne \'n geslote laai of kas gebêre is, weg van die besmette lug.', '<strong>Help ander indien moontlik:</strong> As jy ander moet help dekontamineer, probeer om waterdigte handskoene en \'n masker te dra. Adviseer hulle om dieselfde stappe te volg.'];
+                return ['<strong>Dış giysileri çıkarın:</strong> Dış giysi katmanını sallamaktan kaçınarak dikkatlice çıkarın. Plastik bir torbaya koyun ve ağzını kapatın. Bu torbayı insanlardan ve evcil hayvanlardan uzak tutun.', '<strong>İyice yıkanın:</strong> Ilık (sıcak değil) bir duş alın, tüm vücudunuzu ve saçınızı sabun ve şampuanla yıkayın. Duş imkanı yoksa, tüm açık ten bölgelerini, özellikle elleri ve yüzü temizlemek için ıslak mendil veya ıslak bir bez kullanın.', '<strong>Temiz giysiler giyin:</strong> Kirli havadan uzakta, kapalı bir çekmece veya dolapta saklanan tamamen temiz giysiler giyin.', '<strong>Mümkünse başkalarına yardım edin:</strong> Başkalarının dekontaminasyonuna yardım etmeniz gerekiyorsa, su geçirmez eldiven ve maske takmaya çalışın. Onlara da aynı adımları izlemelerini tavsiye edin.'];
             }
 
             function getKiData() {
                 return {
-                    chartLabel: 'Kaliumjodied Dosis (mg)',
-                    chartTitle: 'Dosisse per Ouderdomsgroep',
-                    labels: ['Pasgeborenes (0-1 md)', 'Babas (1-3 jr)', 'Kinders (3-12 jr)', 'Adolessente (12-18)', 'Volwassenes (18-40)', 'Swanger/Lakterend'],
+                    chartLabel: 'Potasyum İyodür Dozu (mg)',
+                    chartTitle: 'Yaş Grubuna Göre Dozajlar',
+                    labels: ['Yenidoğan (0-1 ay)', 'Bebekler (1-3 yaş)', 'Çocuklar (3-12 yaş)', 'Ergenler (12-18)', 'Yetişkinler (18-40)', 'Hamile/Emziren'],
                     dosages: [16.25, 32.5, 65, 130, 130, 130],
-                    tableHeaders: ['Ouderdomsgroep', 'Aanbevole Dosis', 'Belangrike Notas'],
+                    tableHeaders: ['Yaş Grubu', 'Önerilen Doz', 'Önemli Notlar'],
                     table: [
-                      { age: 'Volwassenes ouer as 40 jaar', dose: '130 mg', notes: 'Word oor die algemeen nie aanbeveel nie.' },
-                      { age: 'Volwassenes 18 tot 40 jaar', dose: '130 mg', notes: 'Standaard volwasse dosis.' },
-                      { age: 'Swanger en Lakterende Vroue', dose: '130 mg', notes: 'Hoogste prioriteit. Enkel dosis.' },
-                      { age: 'Adolessente (12 tot 18 jaar)', dose: '130 mg', notes: 'Standaard volwasse dosis.' },
-                      { age: 'Kinders (3 tot 12 jaar)', dose: '65 mg', notes: 'Helfte van die volwasse dosis.' },
-                      { age: 'Babas (1 md tot 3 jr)', dose: '32.5 mg', notes: '\'n Kwart van die volwasse dosis.' },
-                      { age: 'Pasgeborenes (geboorte tot 1 md)', dose: '16.25 mg', notes: '\'n Agtste van die volwasse dosis. Enkel dosis.' }
+                      { age: '40 yaş üstü yetişkinler', dose: '130 mg', notes: 'Genellikle tavsiye edilmez.' },
+                      { age: '18 ila 40 yaş arası yetişkinler', dose: '130 mg', notes: 'Standart yetişkin dozu.' },
+                      { age: 'Hamile ve Emziren Kadınlar', dose: '130 mg', notes: 'En yüksek öncelik. Tek doz.' },
+                      { age: 'Ergenler (12 ila 18 yaş)', dose: '130 mg', notes: 'Standart yetişkin dozu.' },
+                      { age: 'Çocuklar (3 ila 12 yaş)', dose: '65 mg', notes: 'Yetişkin dozunun yarısı.' },
+                      { age: 'Bebekler (1 ay ila 3 yaş)', dose: '32.5 mg', notes: 'Yetişkin dozunun çeyreği.' },
+                      { age: 'Yenidoğanlar (doğumdan 1 aya kadar)', dose: '16.25 mg', notes: 'Yetişkin dozunun sekizde biri. Tek doz.' }
                     ]
                 };
             }
@@ -353,15 +353,15 @@
             function getShelterData() {
                 return {
                     steps: [
-                        { title: 'Stap 1: Kies die Beste Kamer', text: 'Kies \'n binnenshuise kamer met die minste vensters en deure, verkieslik in \'n kelder of op die grondvloer. Die doel is om soveel moontlik soliede materiaal tussen jou en die buitekant te plaas.' },
-                        { title: 'Stap 2: Versamel Voorrade Vooraf', text: 'Bêre jou Tuisbly-pakket, insluitend seëlmateriaal (plastiekvelle, kleefband), in of naby jou skuilkamer vir vinnige toegang.' },
-                        { title: 'Stap 3: Seël die Kamer Wanneer Opgedra', text: 'Wanneer aangesê word om te skuil, skakel alle waaiers, lugversorging en verhittingstelsels af. Gebruik kleefband en plastiekvelle om vensters, afsetpunte en vents te bedek. Plaas nat handdoeke aan die onderkant van deure om \'n beter seël teen luggedraagde deeltjies te skep.' },
-                        { title: 'Stap 4: Bly Binne en Luister In', text: 'Bly in die verseëlde kamer. Gebruik jou battery-aangedrewe radio om na amptelike instruksies van die owerhede te luister. Moenie vertrek voordat jy die "Alles Veilig"-boodskap ontvang het nie.' }
+                        { title: 'Adım 1: En İyi Odayı Seçin', text: 'Tercihen bodrum katında veya zemin katta, en az pencere ve kapıya sahip bir iç oda seçin. Amaç, sizinle dışarısı arasına mümkün olduğunca fazla katı malzeme koymaktır.' },
+                        { title: 'Adım 2: Malzemeleri Önceden Toplayın', text: 'Evde Kalma Kitinizi, sızdırmazlık malzemeleri (plastik örtü, koli bandı) dahil olmak üzere, hızlı erişim için sığınak odanızda veya yakınında saklayın.' },
+                        { title: 'Adım 3: Talimat Verildiğinde Odayı Mühürleyin', text: 'Sığınma talimatı verildiğinde, tüm vantilatörleri, klimaları ve ısıtma sistemlerini kapatın. Pencereleri, prizleri ve havalandırmaları örtmek için koli bandı ve plastik örtü kullanın. Havadaki partiküllere karşı daha iyi bir sızdırmazlık sağlamak için kapıların altına ıslak havlular yerleştirin.' },
+                        { title: 'Adım 4: İçeride Kalın ve Talimatları Dinleyin', text: 'Mühürlenmiş odada kalın. Yetkililerden gelen resmi talimatları dinlemek için pilli radyonuzu kullanın. "Tehlike Geçti" mesajını alana kadar ayrılmayın.' }
                     ],
                     principles: [
-                        { title: 'Tyd', text: 'Beperk die duur van jou blootstelling. Hoe minder tyd jy naby \'n stralingsbron spandeer, hoe laer sal jou dosis wees. Volg instruksies om vir die aanbevole tydperk in jou skuiling te bly.' },
-                        { title: 'Afstand', text: 'Hoe verder jy van \'n stralingsbron is, hoe veiliger is jy. Die intensiteit van straling neem dramaties af met afstand. Dit is hoekom evakuasie (wanneer dit veilig geag word) \'n sleutelstrategie is.' },
-                        { title: 'Afskerming', text: 'Plaas \'n digte materiaal (\'n skild) tussen jou en die stralingsbron. Beton, stene en grond is uitstekende afskermingsmateriale. Dit is die beginsel agter skuiling in \'n sentrale, vensterlose kamer of kelder.' }
+                        { title: 'Zaman', text: 'Maruz kalma sürenizi sınırlayın. Bir radyasyon kaynağının yakınında ne kadar az zaman geçirirseniz, dozunuz o kadar düşük olur. Önerilen süre boyunca sığınağınızda kalma talimatlarını izleyin.' },
+                        { title: 'Mesafe', text: 'Bir radyasyon kaynağından ne kadar uzakta olursanız o kadar güvende olursunuz. Radyasyonun yoğunluğu mesafe ile önemli ölçüde azalır. Bu nedenle tahliye (güvenli kabul edildiğinde) önemli bir stratejidir.' },
+                        { title: 'Zırhlama', text: 'Sizinle radyasyon kaynağı arasına yoğun bir malzeme (kalkan) yerleştirin. Beton, tuğla ve toprak mükemmel zırhlama malzemeleridir. Merkezi, penceresiz bir odada veya bodrum katında sığınmanın arkasındaki ilke budur.' }
                     ]
                 };
             }
@@ -611,7 +611,7 @@
                 
                 if (areas.length === 0) {
                      const option = document.createElement('option');
-                     option.textContent = 'Kies Gebied';
+                     option.textContent = 'Bölge Seçin';
                      areaSelect.appendChild(option);
                 }
 
